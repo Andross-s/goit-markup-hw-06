@@ -57,7 +57,6 @@ section {
   flex-direction: column;
   align-items: center;
   background: #fff;
-  padding: 16px;
 }
 
 .webstudio {
@@ -71,7 +70,6 @@ section {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  margin-bottom: 16px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -80,11 +78,30 @@ section {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.burger-btn {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  padding: 5px 4px;
+}
+
+.icon-burger {
+  fill: #2e2f42;
+  width: 100%;
+  height: 100%;
+}
+
 .site-nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   width: 100%;
+  justify-content: space-between;
 }
 
 .links-list {
@@ -153,6 +170,161 @@ section {
   text-decoration: none;
   color: #404bbf;
 }
+
+/* базово приховуємо меню */
+
+.links-list,
+.contacts-list {
+  display: none;
+}
+
+/* Overlay меню (по замовчуванню приховане) */
+.menu-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  visibility: visible; /* Видимий елемент */
+  z-index: 1000;
+  opacity: 0; /* Повна видимість */
+  pointer-events: none; /* Вимікаємо взаємодію з елементом */
+  padding: 0 16px;
+  margin: 0;
+  align-items: start;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Відкрите меню */
+.menu-overlay.active {
+  display: flex;
+  opacity: 1; /* Повна прозорість */
+  visibility: hidden; /* Приховуємо(hidden) елемент */
+  pointer-events: auto; /* Вимікаємо взаємодію з елементом */
+}
+
+/* Кнопка закриття */
+.menu-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px; /* Ширина кнопки */
+  height: 24px; /* Висота кнопки */
+  border-radius: 100%; /* Кругла форма */
+  border: 1px solid rgba(20, 20, 20, 0.1); /* Тонка рамка */
+  font-size: 32px;
+  display: flex; /* Flexbox для центрування іконки */
+  background: none;
+  cursor: pointer;
+  align-items: center; /* Центрування по вертикалі */
+  justify-content: center; /* Центрування по горизонталі */
+  padding: 0; /* Убираємо внутрішні відступи */
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна анімація */
+}
+
+.menu-btn-svg {
+  fill: #2e2f42; /* Колір іконки */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору */
+}
+
+/* Список меню */
+.menu-nav {
+  margin: 76px 0 168px 0;
+  padding: 0;
+}
+
+.menu-nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+  text-align: start;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.menu-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+  text-align: start;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.menu-phone,
+.menu-email {
+  font-family: inherit;
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-phone:hover,
+.menu-phone:focus,
+.menu-email:hover,
+.menu-email:focus {
+  color: #404bbf;
+}
+
+.menu-social {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-social-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .menu-social-icon:hover,
+.menu-social-icon:focus {
+  background-color: #31d0aa;
+} */
+
+.menu-svg {
+  fill: #f4f4fd;
+}
+
 /* Section 1 */
 .main-section {
   background-color: #2e2f42;
@@ -177,7 +349,7 @@ section {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 288px;
+  max-width: 216px;
   margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
@@ -968,6 +1140,27 @@ input[type="checkbox"]:checked + label .checkbox-custom {
   }
 
   /* Header для планшетів */
+
+  .burger-btn {
+    display: none;
+  }
+
+  .menu-overlay {
+    display: none !important;
+    position: static;
+    height: auto;
+    background: none;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .menu-nav ul {
+    display: none;
+    gap: 24px;
+  }
+  .close-btn {
+    display: none;
+  }
+
   .header .container {
     flex-direction: row;
     justify-content: space-between;
@@ -984,6 +1177,7 @@ input[type="checkbox"]:checked + label .checkbox-custom {
   .site-nav {
     flex-direction: row;
     align-items: center;
+    justify-content: normal;
   }
 
   .links-list {
@@ -1007,6 +1201,11 @@ input[type="checkbox"]:checked + label .checkbox-custom {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+  }
+
+  .links-list,
+  .contacts-list {
+    display: flex;
   }
 
   /* Hero section для планшетів */
@@ -1140,6 +1339,10 @@ input[type="checkbox"]:checked + label .checkbox-custom {
 
   /* Header для десктопів */
 
+  .burger-btn {
+    display: none;
+  }
+
   .header .container {
     flex-direction: row;
     justify-content: space-between;
@@ -1156,6 +1359,7 @@ input[type="checkbox"]:checked + label .checkbox-custom {
     flex-direction: row;
     gap: 40px;
     align-items: center;
+    padding: 0;
   }
 
   .contacts-link {
@@ -1243,9 +1447,6 @@ input[type="checkbox"]:checked + label .checkbox-custom {
 
   .footer-cont {
     margin-right: 120px;
-  }
-
-  .footer-text {
   }
 
   .footer-social {

@@ -23,7 +23,11 @@
           <a class="webstudio" href="./index.html"
             >Web<span class="studio">Studio</span></a
           >
-          <button class="burger" aria-label="menu">☰</button>
+          <button class="burger-btn" aria-label="menu">
+            <svg class="icon-burger" width="16" height="14">
+              <use xlink:href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
           <ul class="links-list">
             <li>
               <a class="links links-active" href="./index.html">Studio</a>
@@ -46,6 +50,61 @@
             </li>
           </ul>
         </address>
+      </div>
+      <!-- Overlay меню -->
+      <div class="menu-overlay" id="menu-overlay">
+        <div class="menu">
+          <button class="menu-close-btn" aria-label="close">
+            <svg class="menu-btn-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-vector_x"></use>
+            </svg>
+          </button>
+          <nav class="menu-nav">
+            <ul>
+              <li><a class="menu-link menu-link-active" href="#">Studio</a></li>
+              <li><a class="menu-link" href="#">Portfolio</a></li>
+              <li><a class="menu-link" href="#">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="menu-contacts">
+            <a class="menu-phone" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+            <a class="menu-email" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </div>
+          <ul class="menu-social">
+            <li class="menu-icon">
+              <a class="menu-social-icon" href="#">
+                <svg class="menu-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon">
+              <a class="menu-social-icon" href="#">
+                <svg class="menu-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon">
+              <a class="menu-social-icon" href="#">
+                <svg class="menu-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon">
+              <a class="menu-social-icon" href="#">
+                <svg class="menu-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
