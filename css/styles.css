@@ -1483,6 +1483,38 @@ input[type="checkbox"]:checked + label .checkbox-custom {
       ),
       url("../images/people-office1-desktop@2x.jpg");
   }
+  /* Team images x2 */
+  .team-image[alt="Mark Guerrero"] {
+    content: url("../images/mark-guerrero-desktop@2x.jpg");
+  }
+  .team-image[alt="Tom Ford"] {
+    content: url("../images/tom-ford-desktop@2x.jpg");
+  }
+  .team-image[alt="Camila Garcia"] {
+    content: url("../images/camila-garcia-desktop@2x.jpg");
+  }
+  .team-image[alt="Daniel Wilson"] {
+    content: url("../images/daniel-wilson-desktop@2x.jpg");
+  }
+  /* Portfolio images x2 */
+  .row-img[alt="banking-app"] {
+    content: url("../images/bankingapp-desktop@2x.jpg");
+  }
+  .row-img[alt="Cashless Payment"] {
+    content: url("../images/cashlesspayment-desktop@2x.jpg");
+  }
+  .row-img[alt="Meditation App"] {
+    content: url("../images/meditationapp-desktop@2x.jpg");
+  }
+  .row-img[alt="Taxi Service"] {
+    content: url("../images/taxiservice-desktop@2x.jpg");
+  }
+  .row-img[alt="Screen Illustrations"] {
+    content: url("../images/screenillustrations-desktop@2x.jpg");
+  }
+  .row-img[alt="Online Courses"] {
+    content: url("../images/onlinecourses-desktop@2x.jpg");
+  }
 }
 
 /* Для планшетів (768px+) */
@@ -1505,6 +1537,38 @@ input[type="checkbox"]:checked + label .checkbox-custom {
       ),
       url("../images/people-office1-desktop@2x.jpg");
   }
+  /* Team images x2 */
+  .team-image[alt="Mark Guerrero"] {
+    content: url("../images/mark-guerrero-desktop@2x.jpg");
+  }
+  .team-image[alt="Tom Ford"] {
+    content: url("../images/tom-ford-desktop@2x.jpg");
+  }
+  .team-image[alt="Camila Garcia"] {
+    content: url("../images/camila-garcia-desktop@2x.jpg");
+  }
+  .team-image[alt="Daniel Wilson"] {
+    content: url("../images/daniel-wilson-desktop@2x.jpg");
+  }
+  /* Portfolio images x2 */
+  .row-img[alt="banking-app"] {
+    content: url("../images/bankingapp-desktop@2x.jpg");
+  }
+  .row-img[alt="Cashless Payment"] {
+    content: url("../images/cashlesspayment-desktop@2x.jpg");
+  }
+  .row-img[alt="Meditation App"] {
+    content: url("../images/meditationapp-desktop@2x.jpg");
+  }
+  .row-img[alt="Taxi Service"] {
+    content: url("../images/taxiservice-desktop@2x.jpg");
+  }
+  .row-img[alt="Screen Illustrations"] {
+    content: url("../images/screenillustrations-desktop@2x.jpg");
+  }
+  .row-img[alt="Online Courses"] {
+    content: url("../images/onlinecourses-desktop@2x.jpg");
+  }
 }
 
 /* Для десктопів (1158px+) */
@@ -1526,5 +1590,37 @@ input[type="checkbox"]:checked + label .checkbox-custom {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/people-office1-desktop@2x.jpg");
+  }
+  /* Team images x2 */
+  .team-image[alt="Mark Guerrero"] {
+    content: url("../images/mark-guerrero-desktop@2x.jpg");
+  }
+  .team-image[alt="Tom Ford"] {
+    content: url("../images/tom-ford-desktop@2x.jpg");
+  }
+  .team-image[alt="Camila Garcia"] {
+    content: url("../images/camila-garcia-desktop@2x.jpg");
+  }
+  .team-image[alt="Daniel Wilson"] {
+    content: url("../images/daniel-wilson-desktop@2x.jpg");
+  }
+  /* Portfolio images x2 */
+  .row-img[alt="banking-app"] {
+    content: url("../images/bankingapp-desktop@2x.jpg");
+  }
+  .row-img[alt="Cashless Payment"] {
+    content: url("../images/cashlesspayment-desktop@2x.jpg");
+  }
+  .row-img[alt="Meditation App"] {
+    content: url("../images/meditationapp-desktop@2x.jpg");
+  }
+  .row-img[alt="Taxi Service"] {
+    content: url("../images/taxiservice-desktop@2x.jpg");
+  }
+  .row-img[alt="Screen Illustrations"] {
+    content: url("../images/screenillustrations-desktop@2x.jpg");
+  }
+  .row-img[alt="Online Courses"] {
+    content: url("../images/onlinecourses-desktop@2x.jpg");
   }
 }
